@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Josefin+Sans&display=swap');
+
+body {
+  margin: 15px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #022B3A;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* STYLE THE HEADER */
+
+#heading {
+  font-family: 'Cardo', serif;
+  border-bottom: 3px solid #022B3A;
+  max-width: 785px;
+}
+
+/* STYLE THE APP */
+
+.App {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+/* STYLE THE NOTES LIST */
+
+.notes-list {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+  grid-template-rows: repeat(auto-fit, minmax(150px 150px));
+}
+
+/* STYLE THE NOTES */
+
+.note {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #E1E5F2;
+  border-radius: 15px;
+  padding: 15px;
+  min-height: 150px;
+  box-shadow: 0 3px#999;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.note-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* STYLE THE NEW NOTE */
+
+.add-note {
+  background-color: #BFDBF7;
+}
+
+textarea {
+  border: none;
+  resize: none;
+  background: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.btn {
+  font-family: 'Josefin Sans', sans-serif;
+  border: none;
+  background-color: rgb(248, 246, 246);
+  border-radius: 10px;
+  padding: 5px 10px;
+  box-shadow: 0 3px#999;
+}
+
+.btn-delete {
+  background-color: #1F7A8C;
+  color: white;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn:active {
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
+}
